@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Fragment+Mono&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Fragment Mono', monospace;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background: cadetblue;
+}
+body>h1 {
+    text-align: center;
+    color: white;
+}
+.drawing_dashboard{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.3vw;
+}
+.addData{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.form-input{
+    font-size: 2vw;
+    background: #f0f0f0;
+        width: 5vw;
+        height: 5vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1vw;
+        margin-bottom: 0.5vw;
+}
+
+.buttons button {
+    padding: 1vw;
+    font-size: 3vw;
+    border: none;
+    border-radius: 0.5vw;
+    width: 5vw;
+    height: 5vw;
+    cursor: pointer;
+    margin-bottom: 0.5vw;
+}
+svg{
+    width: 800px;
+    height: 800px;
+    border: 2px solid black;
+    margin-top: 1vw;
+}
+.buttonSelected {
+    background: rgb(3 129 117) !important;
+    transform: scale(1.1);
+    color: white;
+
+}

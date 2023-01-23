@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/index.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1>Paint Application</h1>
+    <div class="drawing_dashboard">
+        <div class="addData">
+            <div class="buttons">
+                <button class="freeHand"><i class="fa-solid fa-pen"></i></button>
+                <button class="drawLine"><i class="fa-solid fa-grip-lines-vertical"></i></button>
+                <button class="drawRectangle">	&#9645;</button>
+                <button class="drawCricle"><i class="fa-regular fa-circle"></i></button>
+                <button class="eraser"><i class="fa-solid fa-eraser"></i></button>
+            </div>
+            <div class="select_color">
+                <form action="#">
+                    <div class="form-input">
+                        <label for="fill_style"><i class="fa-solid fa-fill-drip"></i></label>
+                    <input type="color" name="fill_style" id="fill_style">
+                    </div>
+                    <div class="form-input">
+                        <label for="stroke_style"><i class="fa-solid fa-border-all"></i></label>
+                        <input type="color" name="" id="stroke_style">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="drawing_part">
+            <canvas id="canvas" width="1300" height="800"
+            style = "background-color: white; border-radius: 0.5vw;">></canvas>
+        </div>
+    </div>
+</body>
+</html>
